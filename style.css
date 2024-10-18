@@ -550,3 +550,56 @@ nav {
   margin-top: 30px;
   text-align: center;
 }
+/* STYLES FOR TENDERS PAGE */
+h1 {
+  color: #333;
+}
+.search-container {
+  margin-bottom: 20px;
+}
+#searchInput {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+#searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#searchButton:hover {
+  background-color: #0056b3;
+}
+.tenders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.tender-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.tender-card h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+.tender-card p {
+  margin: 10px 0;
+}
+.view-details-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.view-details-btn:hover {
+  background-color: #218838;
+}
