@@ -33,6 +33,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 .logo img {
@@ -95,13 +96,14 @@ nav {
   .nav-links {
     position: fixed;
     right: -100%;
-    top: 70px;
+    top: 100px;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f4f4f4;
     width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: 100vh;
   }
 
   .nav-links.active {
