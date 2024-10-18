@@ -28,7 +28,7 @@ const tenders = [
   function createTenderCard(tender) {
     return `
     <div class="tender-card">
-        <h2>${tender.title}</h2>
+        <h2 classs='sub-title'>${tender.title}</h2>
         <p><strong>Category:</strong> ${tender.category}</p>
         <p><strong>Deadline:</strong> ${tender.deadline}</p>
         <a href="#" class="view-details-btn">View Details</a>
