@@ -20,13 +20,66 @@
         </div>
         <div class="nav-links">
           <a class="nav-items" href="/">Home</a>
-          <a class="nav-items" href="#"> About Us</a>
-          <button class="btn btn-secondary">
-            <a href="login.html">Register</a>
-          </button>
-          <button class="btn btn-primary">
-            <a href="login.html">Login</a>
-          </button>
+          <a class="nav-items" href="about.html"> About Us</a>
+          <a class="nav-items active" href="/#"> Tenders Page</a>
+          <div class="dropdown-wrapper">
+            <!--- Dropdown profile --->
+            <input
+              type="checkbox"
+              id="dropdown-toggle"
+              class="dropdown-toggle"
+            />
+            <label for="dropdown-toggle" class="dropdown-label">
+              <img
+                class="profile-img"
+                src="https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/450563174_1933392743775003_5071268813306350976_n.jpg?stp=c0.33.526.526a_dst-jpg_p526x296&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHFbJLHh9ynGxd3eSSv0Hh2r0-MvxaASqGvT4y_FoBKoS22nwobvOCJsqsy7sQMTsCt-ZAYAKUp2FTyqELu0Vtu&_nc_ohc=9miT0nmOSFYQ7kNvgExATwf&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=A6uEkYqAWhaowvjDNm7SNkg&oh=00_AYDSPAoBTg7KggcmG6SHoUidDDY6I0pHNSgjekA3uKwlaw&oe=671D868C"
+                alt=""
+                srcset=""
+              />
+            </label>
+
+            <!--- Dropdown menu list items --->
+            <div class="dropdown-menu dropdown-menu--display">
+              <div class="upper-triangle"></div>
+              <ul class="dropdown-list">
+                <li>
+                  <ion-icon
+                    name="person-outline"
+                    class="dropdown-list-icon"
+                  ></ion-icon>
+                  <span>Profile</span>
+                </li>
+                <li>
+                  <ion-icon
+                    name="mail-outline"
+                    class="dropdown-list-icon"
+                  ></ion-icon>
+                  <span>Inbox</span>
+                </li>
+                <li>
+                  <ion-icon
+                    name="settings-outline"
+                    class="dropdown-list-icon"
+                  ></ion-icon>
+                  <span>Settings</span>
+                </li>
+                <li>
+                  <ion-icon
+                    name="help-circle-outline"
+                    class="dropdown-list-icon"
+                  ></ion-icon>
+                  <span>Help</span>
+                </li>
+                <li>
+                  <ion-icon
+                    name="log-out-outline"
+                    class="dropdown-list-icon"
+                  ></ion-icon>
+                  <span>Logout</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="hamburger">
           <i class="fas fa-bars"></i>
@@ -49,6 +102,15 @@
         </div>
       </section>
     </main>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="./js/script.js"></script>
     <script src="./js/tenders.js"></script>
   </body>

@@ -9,6 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --priColor: #201444;
@@ -605,6 +608,14 @@ nav {
   border-radius: 4px;
   outline: none;
 }
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user {
+
+}
 .tenders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -682,4 +693,114 @@ nav {
 }
 .tender-container {
   margin-top: 5rem;
+}
+/* STYLING FOR USER DROPDOWN MENU */
+/* Notification Icon */
+ion-icon[name="notifications-outline"] {
+  font-size: 1.85rem;
+  color: var(--gray-100);
+}
+
+/* Dropdown css */
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+/* 
+  Image Source
+    - www.pexels.com
+    - https://www.pexels.com/photo/woman-wearing-black-spaghetti-strap-top-415829/
+*/
+.profile-img {
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 4rem;
+  left: -6rem;
+  padding: 1rem 0rem;
+  color: #fff;
+  background-color: var(--priColor);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.upper-triangle {
+  position: absolute;
+  right: 30%;
+  top: -0.75rem;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent; /* Left border */
+  border-right: 12px solid transparent; /* Right border */
+  border-bottom: var(--priColor); /* Bottom border */
+}
+
+/* Toogle dropdown menu */
+.dropdown-menu--display {
+  display: none;
+}
+
+.dropdown-toggle:checked + .dropdown-label + .dropdown-menu--display {
+  display: block;
+}
+
+/* Dropdown list */
+.dropdown-list-icon {
+  font-size: 1.25rem;
+}
+
+.dropdown-list {
+  list-style-type: none;
+  width: 12rem;
+}
+
+.dropdown-list > li {
+  padding: 1.25rem 1rem;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.dropdown-list > li:hover {
+  border-left: var(--secColor);
+  background-color: #218838;
+}
+
+.dropdown-list > li > span {
+  font-size: 1rem;
+}
+/* responsive design for profile dropdownl */
+
+@media screen and (max-width: 768px) {
+  .profile-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dropdown-menu {
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
 }
