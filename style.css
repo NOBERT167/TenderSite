@@ -631,10 +631,41 @@ nav {
 .view-details-btn:hover {
   background-color: #218838;
 }
+
+/* STYLES FOR ABOUT PAGE */
 .about {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   margin-top: 5rem;
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.about-image img {
+  max-width: 50vw;
+  height: auto;
+  border: 1px solid var(--priColor);
+  border-radius: 10px;
+}
+.about-content {
+  max-width: 50vw;
+  padding: 2rem;
+}
+/* Responsive styles for about page */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column-reversed;
+  }
+  .about-image img {
+    max-width: 100%;
+  }
+  .about-content {
+    max-width: 100%;
+    padding: 0;
+  }
 }
