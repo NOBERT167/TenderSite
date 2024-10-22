@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PPRA Tenders Page</title>
+    <title>About Us - PPRA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="tenders-page">
+  <body>
     <header>
       <nav>
         <div class="logo">
@@ -16,7 +20,7 @@
         </div>
         <div class="nav-links">
           <a class="nav-items" href="/">Home</a>
-          <a class="nav-items" href="about.html"> About Us</a>
+          <a class="nav-items" href="#"> About Us</a>
           <button class="btn btn-secondary">
             <a href="login.html">Register</a>
           </button>
@@ -29,20 +33,23 @@
         </div>
       </nav>
     </header>
-    <div class="tender-container">
-      <h1 class="title">PPRA Tenders</h1>
 
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search tenders..." />
-        <button id="searchButton" class="btn-primary">Search</button>
-      </div>
+    <main>
+      <section class="tender-container">
+        <h1 class="title">PPRA Tenders</h1>
 
-      <div id="tendersGrid" class="tenders-grid">
-        <!-- Tender cards will be dynamically inserted here -->
-        <!-- please note that the tenders displayed is just a mock array of tenders for demonstration purposes. You can easily expand on this by connecting it to a real API to fetch actual tender data. -->
-      </div>
-    </div>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search tenders..." />
+          <button id="searchButton" class="btn-primary">Search</button>
+        </div>
 
+        <div id="tendersGrid" class="tenders-grid">
+          <!-- Tender cards will be dynamically inserted here -->
+          <!-- please note that the tenders displayed is just a mock array of tenders for demonstration purposes. You can easily expand on this by connecting it to a real API to fetch actual tender data. -->
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
     <script src="./js/tenders.js"></script>
   </body>
 </html>
