@@ -140,6 +140,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  margin-top: 20px;
+  min-height: 100vh;
+  height: 100vh;
 }
 
 .hero-content {
@@ -294,6 +297,39 @@ nav {
   display: inline-block;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 100vh;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    margin-bottom: 1rem;
+  }
+
+  .plan-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .next-icon {
+    display: none;
+  }
+}
+
 /* How it works section styles */
 .how-it-works {
   width: 100%;
@@ -379,32 +415,6 @@ nav {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .plan-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .steps {
-    flex-direction: column;
-    align-items: center;
-  }
-  .next-icon {
-    display: none;
-  }
 }
 
 /* LOGIN AND REGISTER PAGE */
