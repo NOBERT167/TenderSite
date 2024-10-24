@@ -563,6 +563,7 @@ nav {
   list-style: none;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .category-card {
   cursor: pointer;
@@ -618,6 +619,14 @@ nav {
 }
 .view-details-btn:hover {
   background-color: #218838;
+}
+
+/* RESONSIVE MEDIA QUERIES FOR TENDERS PAGE */
+@media (max-width: 768px) {
+  .category-card {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 
 /* STYLES FOR ABOUT PAGE */
