@@ -27,10 +27,10 @@
           <a class="nav-items" href="#">Home</a>
           <a class="nav-items" href="about.html"> About Us</a>
           <button class="btn btn-secondary">
-            <a href="register.html">Register</a>
+            <a href="#">Register</a>
           </button>
           <button class="btn btn-primary">
-            <a href="#">Login</a>
+            <a href="login.html">Login</a>
           </button>
         </div>
         <div class="hamburger">
@@ -41,8 +41,12 @@
     <main class="signin-page">
       <div class="signin-container">
         <div class="signin-form">
-          <h1 class="title">Log in</h1>
+          <h1 class="title">Register Now!</h1>
           <form action="#" class="form">
+            <div class="input-field">
+              <input type="text" placeholder="Enter your name" required />
+              <i class="uil uil-user"></i>
+            </div>
             <div class="input-field">
               <input type="text" placeholder="Enter your email" required />
               <i class="uil uil-envelope icon"></i>
@@ -51,7 +55,16 @@
               <input
                 type="password"
                 class="password"
-                placeholder="Enter your password"
+                placeholder="Create a password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                placeholder="Confirm a password"
                 required
               />
               <i class="uil uil-lock icon"></i>
@@ -60,21 +73,21 @@
 
             <div class="checkbox-text">
               <div class="checkbox-content">
-                <input type="checkbox" id="logCheck" />
-                <label for="logCheck" class="text">Remember me</label>
+                <input type="checkbox" id="termCon" />
+                <label for="termCon" class="text"
+                  >I accept all terms and conditions</label
+                >
               </div>
-
-              <a href="#" class="text">Forgot password?</a>
             </div>
 
             <div class="input-field button">
-              <input type="button" value="Login" />
+              <input type="button" value="Signup" />
             </div>
           </form>
           <div class="login-signup">
             <span class="text"
-              >Not a member?
-              <a href="/register.html" class="text signup-link">Register Now</a>
+              >Already a Member?
+              <a href="/login.html" class="text signup-link">Login Now</a>
             </span>
           </div>
         </div>

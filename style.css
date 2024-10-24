@@ -235,9 +235,7 @@ nav {
 }
 
 .plan-card-special {
-  background-color: var(--priColor);
-  color: #fff;
-  border: none;
+  border: 1px solid var(--priColor);
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
@@ -257,13 +255,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-.plan-card-special .price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
 
 .plancard-list {
   list-style-type: none;
@@ -280,13 +271,6 @@ nav {
   font-family: "Monserrat", sans-serif;
   font-size: 16px;
   color: #250d48b3;
-}
-
-.plan-card-special li {
-  margin-bottom: 0.5rem;
-  font-family: "Monserrat", sans-serif;
-  font-size: 16px;
-  color: #999;
 }
 
 .plan-card .btn {
@@ -334,20 +318,11 @@ nav {
 /* How it works section styles */
 .how-it-works {
   width: 100%;
-  background-color: var(--priColor);
-  color: #fff;
   text-align: center;
   margin: 0;
   padding: 2rem;
 }
 
-.how-it-works h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 24px;
-}
 
 .steps {
   display: flex;
@@ -368,13 +343,7 @@ nav {
   max-width: 250px;
   border: 1px solid #218838;
   border-radius: 10px;
-}
-
-.step-description {
-  font-family: "Monserrat", sans-serif;
-  font-size: 16px;
-  color: #bebebe;
-  padding: 1rem 0;
+  background: #fff;
 }
 
 .step-number {
@@ -384,7 +353,8 @@ nav {
   font-family: "Roboto", sans-serif;
   position: relative;
   top: -20px;
-  background: var(--secColor);
+  background: var(--priColor);
+  color: #f7f7f7;
   border-radius: 50%;
   padding: 0.5rem;
   width: 50px;
@@ -418,88 +388,28 @@ nav {
   cursor: pointer;
 }
 
-/* LOGIN AND REGISTER PAGE */
-.login-page {
-  font-family: "Poppins", sans-serif;
+/* REGISTRATION */
+.signin-page {
+  background-color: #f4f4f4;
   min-height: 100vh;
+  padding-top: 100px;
+}
+.signin-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.login-container {
-  position: relative;
-  max-width: 430px;
-  width: 100%;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  margin: 0 20px;
-}
-
-.login-container .forms {
-  display: flex;
   align-items: center;
-  height: 440px;
-  width: 200%;
-  transition: height 0.2s ease;
 }
-
-
-.login-container .form {
-  width: 50%;
-  padding: 30px;
-  background-color: #fff;
-  transition: margin-left 0.18s ease;
-}
-
-.login-container.active .login {
-  margin-left: -50%;
-  opacity: 0;
-  transition: margin-left 0.18s ease, opacity 0.15s ease;
-}
-
-.login-container .signup {
-  opacity: 0;
-  transition: opacity 0.09s ease;
-}
-
-.login-container.active .signup {
-  opacity: 1;
-  transition: opacity 0.2s ease;
-}
-
-.container.active .forms {
-  height: 600px;
-}
-
-.signup-link, .login-link {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--priColor);
-}
-
-.login-container .form .title {
-  position: relative;
-  font-size: 27px;
-  font-weight: 600;
-}
-
-.form .title::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  background-color: var(--priColor);
-  border-radius: 25px;
+.signin-form {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, .1);
+  border-radius: 10px;
 }
 
 .form .input-field {
   position: relative;
-  height: 40px;
+  height: 30px;
   width: 100%;
   margin-top: 30px;
 }
@@ -511,7 +421,7 @@ nav {
   padding: 0 35px;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 14px;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid transparent;
   transition: all 0.2s ease;
@@ -564,6 +474,7 @@ nav {
 .form .text {
   color: #333;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .form a.text {
@@ -594,11 +505,26 @@ nav {
 .button input:hover {
   background-color: var(--priColor);
 }
-
-.form .login-signup {
-  margin-top: 30px;
+.login-signup {
+  margin-top: 20px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
+.signup-link, .login-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--priColor);
+  margin-left: 10px;
+}
+
+/* RESPONSIVE MEDIA QUERIES FOR LOGIN AND REGISTER PAGE */
+@media (max-width: 500px) {
+  .signin-form {
+    margin: 20px;
+    width: 100%;
+  }
+}
+
 /* STYLES FOR TENDERS PAGE */
 .tender-container {
   max-width: 1200px;
@@ -624,9 +550,7 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-.user {
 
-}
 .tenders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -721,7 +645,7 @@ ion-icon[name="notifications-outline"] {
   display: none; /* Hide the checkbox */
 }
 
-/* 
+/*
   Image Source
     - www.pexels.com
     - https://www.pexels.com/photo/woman-wearing-black-spaghetti-strap-top-415829/
@@ -802,8 +726,6 @@ ion-icon[name="notifications-outline"] {
 
 @media screen and (max-width: 768px) {
   .profile-img {
-    height: 2.5rem;
-    width: 2.5rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -909,7 +831,7 @@ ion-icon[name="notifications-outline"] {
 
 
 .services-section {
-  padding: 60px 20px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -971,9 +893,12 @@ ion-icon[name="notifications-outline"] {
   background-color: white;
 }
 
-.faq-container {
+.faq-section {
   max-width: 800px;
   margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .faq-item {
@@ -985,12 +910,13 @@ ion-icon[name="notifications-outline"] {
 
 .faq-question {
   padding: 20px;
-  background-color: #f8f9fa;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
 }
 
 .faq-question:hover {
@@ -998,6 +924,9 @@ ion-icon[name="notifications-outline"] {
 }
 
 .faq-answer {
+  font-family: "Monserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
   padding: 0 20px;
   max-height: 0;
   overflow: hidden;
@@ -1022,7 +951,12 @@ ion-icon[name="notifications-outline"] {
 .footer {
   background-color: #333;
   color: white;
-  padding: 60px 20px 30px;
+  padding: 40px 20px 40px 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-grid {
@@ -1044,6 +978,7 @@ ion-icon[name="notifications-outline"] {
 
 .footer-column ul li {
   margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-column ul li a {
@@ -1062,6 +997,10 @@ ion-icon[name="notifications-outline"] {
   border-top: 1px solid #444;
 }
 
+.copyright {
+  font-family: "Roboto", sans-serif;
+  padding-left: -40px;
+}
 .social-links {
   display: flex;
   gap: 15px;
@@ -1074,7 +1013,7 @@ ion-icon[name="notifications-outline"] {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #444;
+  background-color: #28a745;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1082,11 +1021,15 @@ ion-icon[name="notifications-outline"] {
 }
 
 .social-links a:hover {
-  background-color: #007bff;
+  background-color: #218838;
 }
 
 @media (max-width: 768px) {
   .section-header h2 {
       font-size: 2rem;
   }
+  .social-links {
+      justify-content: center;
+  }
 }
+

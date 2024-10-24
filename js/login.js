@@ -25,13 +25,13 @@ const container = document.querySelector(".login-container"),
         });
       });
 
-      // js code to appear signup and login form
-      signUp.addEventListener("click", (e) => {
-        e.preventDefault();
-        container.classList.add("active");
-      });
+      // // js code to appear signup and login form
+      // signUp.addEventListener("click", (e) => {
+      //   e.preventDefault();
+      //   container.classList.add("active");
+      // });
 
-      login.addEventListener("click", (e) => {
-        e.preventDefault();
-        container.classList.remove("active");
-      });
+      // login.addEventListener("click", (e) => {
+      //   e.preventDefault();
+      //   container.classList.remove("active");
+      // });
