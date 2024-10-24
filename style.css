@@ -392,12 +392,13 @@ nav {
 .signin-page {
   background-color: #f4f4f4;
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .signin-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
 }
 .signin-form {
   width: 400px;
@@ -522,6 +523,11 @@ nav {
   .signin-form {
     margin: 20px;
     width: 100%;
+  }
+  .signin-container {
+    min-height: auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
   }
 }
 
