@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - PPRA</title>
+    <title>
+      Tenders Page - Access tenders, search and filter basing on category
+    </title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,7 +16,7 @@
     <header>
       <nav>
         <div class="logo">
-          <a href="/">
+          <a href="/index.html">
             <img src="./Assets/logo.png" alt="PPRA Logo" />
           </a>
         </div>
@@ -87,7 +89,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="tenders-page">
       <section class="tender-container">
         <h1 class="title">PPRA Tenders</h1>
 
@@ -95,12 +97,96 @@
           <input type="text" id="searchInput" placeholder="Search tenders..." />
           <button id="searchButton" class="btn-primary">Search</button>
         </div>
+        <div class="tenders-categories">
+          <ul class="tenders-categories-list">
+            <li class="category-card active-category" data-category="All">
+              All Tenders
+            </li>
+            <li class="category-card" data-category="IT">IT</li>
+            <li class="category-card" data-category="Infrastructure">
+              Infrastructure
+            </li>
+            <li class="category-card" data-category="Healthcare">Healthcare</li>
+            <li class="category-card" data-category="Construction">
+              Construction
+            </li>
+            <li class="category-card" data-category="Supply Chain">
+              Supply Chain
+            </li>
+          </ul>
+        </div>
 
         <div id="tendersGrid" class="tenders-grid">
           <!-- Tender cards will be dynamically inserted here -->
-          <!-- please note that the tenders displayed is just a mock array of tenders for demonstration purposes. You can easily expand on this by connecting it to a real API to fetch actual tender data. -->
+          <!-- please note that the tenders displayed is just a mock array of tenders for demonstration purposes (Check tenders.js file). You can easily expand on this by connecting it to a real API to fetch actual tender data. -->
         </div>
       </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h3 class="sub-title">About Us</h3>
+              <ul>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Leadership Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">News & Updates</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="sub-title">Services</h3>
+              <ul>
+                <li><a href="#">E-Procurement</a></li>
+                <li><a href="#">Tender Management</a></li>
+                <li><a href="#">Supplier Registration</a></li>
+                <li><a href="#">Training & Support</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="sub-title">Resources</h3>
+              <ul>
+                <li><a href="/tenders.html">Tenders</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support Center</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="sub-title">Contact Us</h3>
+              <ul>
+                <li><a href="#">Contact Details</a></li>
+                <li><a href="#">Office Locations</a></li>
+                <li><a href="#">Feedback Form</a></li>
+                <li><a href="#">Report Issues</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 PPRA. All rights reserved.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook fa-xl"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-twitter fa-xl"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin fa-xl"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube fa-xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <!-- Ionicons -->
     <script
@@ -113,5 +199,6 @@
     ></script>
     <script src="./js/script.js"></script>
     <script src="./js/tenders.js"></script>
+    <script src="./js/searchtender.js"></script>
   </body>
 </html>
