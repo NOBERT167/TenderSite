@@ -311,7 +311,7 @@ nav {
     align-items: center;
   }
   .next-icon {
-    display: none;
+    transform: rotate(90deg);
   }
 }
 
@@ -691,8 +691,8 @@ ion-icon[name="notifications-outline"] {
     - https://www.pexels.com/photo/woman-wearing-black-spaghetti-strap-top-415829/
 */
 .profile-img {
-  height: 3rem;
-  width: 3rem;
+  height: 3.5rem;
+  width: 3.5rem;
   display: block;
   background-color: white;
   cursor: pointer;
@@ -700,6 +700,7 @@ ion-icon[name="notifications-outline"] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 2px solid #218838;
 }
 
 .dropdown-menu {
