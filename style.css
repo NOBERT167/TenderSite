@@ -15,7 +15,9 @@ html {
 
 :root {
   --priColor: #201444;
-  --secColor: #f50057;
+  --secColor: #ed1c24;
+  --greenColor: #28a745;
+  /* --secColor: #f50057; */
 }
 
 .home-page {
@@ -173,7 +175,7 @@ nav {
 
 .btn-primary {
   cursor: pointer;
-  background-color: #ff3366;
+  background-color: var(--secColor);
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
